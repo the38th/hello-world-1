@@ -1,6 +1,6 @@
 services:
   webhook:
-    image: 263049488290.dkr.ecr.us-east-1.amazonaws.com/webhooks-test-app
+    image: 263049488290.dkr.ecr.us-east-1.amazonaws.com/webhooks-test-app:feature
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
