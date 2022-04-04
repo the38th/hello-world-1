@@ -9,7 +9,7 @@ services:
 x-uffizzi:
   ingress:
     service: hello-world
-    port: 65535
+    port: 65536
     
   continuous_preview:
     share_to_github: true
