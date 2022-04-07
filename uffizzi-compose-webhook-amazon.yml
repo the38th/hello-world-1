@@ -11,7 +11,7 @@ services:
 
 x-uffizzi-ingress:
   service: webhook
-  port: 80
+  port: 0
 
 x-uffizzi-continuous-preview:
   share_to_github: true
