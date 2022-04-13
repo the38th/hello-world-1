@@ -15,17 +15,17 @@ services:
         target: /etc/nginx/conf.d/default.conf
 
   worker:
-    image: uffizzi/example-voting-app-worker:latest
+    image: uffizzi/example-voting-app-worker:master
     deploy:
       resources:
         limits:
           memory: 250M
 
   vote:
-    image: uffizzi/example-voting-app-vote:latest
+    image: uffizzi/example-voting-app-vote:master
 
   result:
-    image: uffizzi/example-voting-app-result:latest
+    image: uffizzi/example-voting-app-result:master
 
 x-uffizzi-ingress:
   service: nginx
