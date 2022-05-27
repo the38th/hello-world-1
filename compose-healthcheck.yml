@@ -13,7 +13,7 @@ services:
 
 x-uffizzi:
   continuous_preview:
-    delete_preview_after: 10h
+    delete_preview_after: 1h
 
 x-uffizzi-ingress:
   service: hello-world
