@@ -4,7 +4,7 @@ services:
       context: https://github.com/NealArw/hello-world-1
       dockerfile: /Dockerfile
     environment:
-      TEST1: test11
+      TEST1: test_1384
       
 x-uffizzi:
   ingress:
