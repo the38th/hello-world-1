@@ -1,5 +1,5 @@
 services:
-  1-hello-world:
+  h1ello-world:
     build: 
       context: https://github.com/NealArw/hello-world-1
       dockerfile: /Dockerfile
