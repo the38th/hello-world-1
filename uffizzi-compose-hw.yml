@@ -1,5 +1,5 @@
 services:
-  h1ello-world:
+  hello-world:
     build: 
       context: https://github.com/NealArw/hello-world-1
       dockerfile: /Dockerfile
@@ -8,7 +8,7 @@ services:
 
 x-uffizzi:
   ingress:
-    service: h1ello-world
+    service: hello-world
     port: 80
     
   continuous_preview:
