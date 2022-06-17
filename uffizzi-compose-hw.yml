@@ -1,4 +1,4 @@
-2services:
+s2ervices:
   hello-world:
     build: 
       context: https://github.com/NealArw/hello-world-1
