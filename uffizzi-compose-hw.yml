@@ -6,7 +6,7 @@ services:
       args:
         testarg: uffizzi_test
 
-x-uffizzi:
+1-x-uffizzi:
   ingress:
     service: hello-world
     port: 80
