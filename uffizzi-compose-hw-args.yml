@@ -7,6 +7,6 @@ services:
         - IMAGES_PATH=images
         - TEST_ARG=Hello from compose
 
-ingress:
+x-uffizzi-ingress:
   service: hello-world
   port: 80
