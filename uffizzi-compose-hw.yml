@@ -1,4 +1,4 @@
-s1ervices:
+services:
   hello-world:
     build: 
       context: https://github.com/NealArw/hello-world-1
@@ -9,7 +9,7 @@ s1ervices:
 x-uffizzi:
   ingress:
     service: hello-world
-    port: 80
+    port: 800000
     
   continuous_preview:
     share_to_github: true
