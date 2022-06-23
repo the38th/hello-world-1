@@ -49,7 +49,7 @@ x-uffizzi-continuous_preview:
   
 configs:
   my_config_2:
-    file: ./vote2.conf
+    file: ./config2/vote2.conf
 
 secrets:
   user:
