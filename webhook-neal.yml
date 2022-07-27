@@ -1,6 +1,6 @@
 services:
   webhooks_test_app:
-    image: nealarw/webhooks-test-app:latest
+    image: nealarw/webhook-test-app:latest
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
