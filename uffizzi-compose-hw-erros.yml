@@ -1,0 +1,33 @@
+services:
+  1-hello-world:
+    build: 
+      context: https://github.com/NealArw/hello-world-1#testing
+      dockerfile: /Dockerfile
+      args:
+        testarg: uffizzi_test
+    secrets:
+      - pg_user
+      - pg_password
+
+
+x-uffizzi:
+  ingress:
+    service: 1-hello-world
+    port: 80
+    
+  continuous_preview:
+    share_to_github: true
+    delete_preview_after: 1h
+    delete_preview_when_image_tag_is_updated: true
+    deploy_preview_when_image_tag_is_created: true
+    delete_preview_when_pull_request_is_closed: true
+    deploy_preview_when_pull_request_is_opened: true
+
+
+secrets:
+  pg_user:
+    external: true
+    name: "POSTGRES_USER"
+  pg_password:
+    external: true
+    name: "POSTGRES_PASSWORD"
