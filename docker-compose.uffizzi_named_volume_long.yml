@@ -17,7 +17,7 @@ services:
         limits:
           memory: 1000M
     volumes:
-      - source: share_db
+      - source: db_share
         target: /db
         read_only: false
 
