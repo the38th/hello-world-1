@@ -1,7 +1,7 @@
 services:
   1-hello-world:
     build: 
-      context: https://github.com/NealArw/hello-world-1
+      context: https://github.com/NealArw/hello-world-1-1
       dockerfile: /Dockerfile
       args:
         testarg: uffizzi_test
@@ -9,7 +9,7 @@ services:
 x-uffizzi:
   ingress:
     service: 1-hello-world
-    port: 81
+    port: 8
     
   continuous_preview:
     share_to_github: true
