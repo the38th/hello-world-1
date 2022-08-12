@@ -1,4 +1,4 @@
-ser1vices:
+services:
   hello-world:
     build: 
       context: https://github.com/NealArw/hello-world-1
