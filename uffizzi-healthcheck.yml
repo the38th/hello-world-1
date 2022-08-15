@@ -6,7 +6,7 @@ services:
         - CMD
       interval: 10s
       timeout: 5s
-      start_period: 5a
+      start_period: 5sa
       retries: 5
 
 x-uffizzi:
