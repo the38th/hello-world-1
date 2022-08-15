@@ -4,7 +4,7 @@ services:
     healthcheck:
       test:
         - CMD
-      interval: 10ss
+      interval: 10ssasdqw
       timeout: 5s
       start_period: 5s
       retries: 5
