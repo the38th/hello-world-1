@@ -6,8 +6,8 @@ services:
         - CMD
       interval: 10s
       timeout: 5s
-      start_period: 5sas
-      retries: 5
+      start_period: 5s
+      retries: 5a
 
 x-uffizzi:
   ingress:
