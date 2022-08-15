@@ -3,11 +3,11 @@ services:
     image: zipofar/my_nginx_simple:latest
     healthcheck:
       test:
-        - CMD
+        - aCMD
       interval: 10h
       timeout: 5s
       start_period: 5s
-      retries: 5a
+      retries: 5
 
 x-uffizzi:
   ingress:
