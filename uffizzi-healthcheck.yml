@@ -5,8 +5,8 @@ services:
       test:
         - CMD
       interval: 10s
-      timeout: 5sd
-      start_period: 5s
+      timeout: 5s
+      start_period: 5sd
       retries: 5
 
 x-uffizzi:
