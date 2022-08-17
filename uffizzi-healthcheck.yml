@@ -5,9 +5,9 @@ services:
       test:
         - CMD
       interval: 10h
-      timeout: 5s
+      timeout: 5sss
       start_period: 5s
-      retries: 5s
+      retries: 5
 
 x-uffizzi:
   ingress:
