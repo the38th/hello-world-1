@@ -5,7 +5,7 @@ services:
       test:
         - CMD
       interval: 10h
-      timeout: 5sss
+      timeout: 5s
       start_period: 5s
       retries: 5
 
