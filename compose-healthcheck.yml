@@ -5,7 +5,7 @@ services:
   hello-world:
     image: nginx
     healthcheck:
-      test: ["CMD", "curl", "-f", "https://www.google.com/"]
+      test: ["CMD", "curl", "-f", "https://www.google111111.com/"]
       interval: 1m30s
       timeout: 35s
       retries: 5
