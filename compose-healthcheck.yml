@@ -9,7 +9,6 @@ services:
       interval: 1m32s
       timeout: 33s
       retries: 7
-      start_period: 41s
 
 x-uffizzi:
   continuous_preview:
