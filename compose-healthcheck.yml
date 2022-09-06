@@ -6,10 +6,7 @@ services:
     image: nginx
     healthcheck:
       test: ["CMD", "curl", "-f", "https://www.google111111.com/"]
-      interval: 1m32s
-      timeout: 33s
-      retries: 7
-      start_period: 41s
+
 
 x-uffizzi:
   continuous_preview:
