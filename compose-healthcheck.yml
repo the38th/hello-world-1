@@ -8,8 +8,8 @@ services:
       test: ["CMD", "curl", "-f", "https://www.google111111.com/"]
       interval: 1m30s
       timeout: 35s
-      retries: 5
-      start_period: 40m
+      retries: 5s
+      start_period: 40s
 
 x-uffizzi:
   continuous_preview:
