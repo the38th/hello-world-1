@@ -1,0 +1,15 @@
+services:
+  webhooks_test_app:
+    image: ttl.sh/7e64aa1d-6c2f-445d-afe4-16b599c831a1:2
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+x-uffizzi-ingress:
+  service: webhooks_test_app
+  port: 80
+
+x-uffizzi-continuous-preview:
+  delete_preview_after: 1h
+  delete_preview_when_image_tag_is_updated: true
+  deploy_preview_when_image_tag_is_created: true
