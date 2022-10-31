@@ -10,7 +10,7 @@ services:
         limits:
           memory: 1000M
     volumes:
-      - /db
+      - ./
 
 x-uffizzi:
   ingress:
