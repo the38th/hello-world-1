@@ -1,20 +1,24 @@
+version: '3.7'
+
 services:
-  hello-world:
-    build: 
-      context: https://github.com/NealArw/hello-world-1
+  web:
+    build:
+      context: https://github.com/NealArw/hello-world-1#volume-from-the-root
       dockerfile: /Dockerfile
-    environment:
-      TEST1: test11
-      
+    deploy:
+      resources:
+        limits:
+          memory: 1000M
+    volumes:
+      - /db
+
 x-uffizzi:
   ingress:
-    service: hello-world
+    service: web
     port: 80
-    
+
   continuous_preview:
     share_to_github: true
-    delete_preview_after: 1h
-    delete_preview_when_image_tag_is_updated: true
-    deploy_preview_when_image_tag_is_created: true
+    delete_preview_after: 6h
     delete_preview_when_pull_request_is_closed: true
     deploy_preview_when_pull_request_is_opened: true
