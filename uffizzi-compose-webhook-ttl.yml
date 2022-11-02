@@ -1,6 +1,6 @@
 services:
   webhooks_test_app:
-    image: ttl.sh/7e64aa1d-6c2f-445d-afe4-16b599c831a1:2
+    image: ttl.sh/7e64aa1d-6c2f-445d-afe4-16b599c831a1:2h
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
