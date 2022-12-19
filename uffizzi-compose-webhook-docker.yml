@@ -1,6 +1,6 @@
 services:
   webhook:
-    image: uffizzitest/webhooks-test-app-ppp:latest
+    image: uffizzitest/webhooks-test-app:latest
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
