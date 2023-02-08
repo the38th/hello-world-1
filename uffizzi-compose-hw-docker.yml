@@ -1,0 +1,9 @@
+services:
+  hello-world:
+    build:
+      context: https://github.com/7R41N33/hello-world:master
+      dockerfile: Dockerfile
+
+ingress:
+  service: hello-world
+  port: 80

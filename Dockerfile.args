@@ -1,0 +1,10 @@
+FROM nginx:1.19
+
+ARG TEST_ARG
+ARG IMAGES_PATH
+
+RUN echo "Test argument value: ${TEST_ARG}"
+RUN echo "/usr/share/nginx/html/${IMAGES_PATH}/"
+
+COPY index.html /usr/share/nginx/html/index.html
+COPY images /usr/share/nginx/html/${IMAGES_PATH}/

@@ -1,0 +1,19 @@
+services:
+  webhook:
+    image: uffizzitest/test-private-repo:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      TEST: test123
+    deploy:
+      x-uffizzi-auto-deploy-updates: true
+
+x-uffizzi:
+  ingress:
+    service: webhook
+    port: 80
+
+  continuous_preview:
+    delete_preview_after: 10h
+    delete_preview_when_image_tag_is_updated: true
+    deploy_preview_when_image_tag_is_created: true

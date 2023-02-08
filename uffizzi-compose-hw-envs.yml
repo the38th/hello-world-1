@@ -1,0 +1,13 @@
+services:
+  hello-world:
+    build:
+      context: https://github.com/7R41N33/hello-world:master
+    env_file:
+    environment:
+      - TEST_ENV_1=123
+      - TEST_ENV_2=123
+      - URL=https://example.com?k=1&f=2
+
+ingress:
+  service: hello-world
+  port: 80

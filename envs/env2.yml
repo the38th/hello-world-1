@@ -1,0 +1,3 @@
+POSTGRES_PASSWORD: postgres
+TEST: env2
+TEST_2: env2_2

@@ -1,0 +1,13 @@
+services:
+  hello-world:
+    build:
+      context: https://github.com/7R41N33/hello-world:master
+
+continuous_preview:
+  deploy_preview_when_pull_request_is_opened: true
+  delete_preview_when_pull_request_is_closed: true
+  share_to_github: 'No'
+
+ingress:
+  service: hello-world
+  port: 80

@@ -1,0 +1,15 @@
+services:
+  nginx:
+    image: nginx:latest
+    deploy:
+      x-uffizzi-auto-deploy-updates: true
+
+x-uffizzi:
+  ingress:
+    service: nginx
+    port: 80
+
+  continuous_preview:
+    delete_preview_after: 1h
+    delete_preview_when_image_tag_is_updated: true
+    deploy_preview_when_image_tag_is_created: true

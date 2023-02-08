@@ -1,0 +1,12 @@
+services:
+  hello-world:
+    build:
+      context: https://github.com/7R41N33/hello-world:master
+      dockerfile: Dockerfile
+      args:
+        RAILS_ENV: development
+        NAME: hello-world-test-args
+
+ingress:
+  service: hello-world
+  port: 80

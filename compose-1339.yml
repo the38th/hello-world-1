@@ -1,0 +1,7 @@
+services:
+  'on':
+    image: nginx:latest
+
+ingress:
+  service: 'on'
+  port: 8080

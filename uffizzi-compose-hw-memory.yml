@@ -1,0 +1,12 @@
+services:
+  hello-world:
+    build:
+      context: https://github.com/7R41N33/hello-world:master
+    deploy:
+      resources:
+        limits:
+          memory: 100M
+
+ingress:
+  service: hello-world
+  port: 80

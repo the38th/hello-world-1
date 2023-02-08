@@ -1,0 +1,16 @@
+services:
+  webhooks-test-app:
+    image: ghcr.io/nealarw/webhook-test-app_2:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+x-uffizzi-ingress:
+  service: webhooks-test-app
+  port: 80
+
+x-uffizzi-continuous-preview:
+  delete_preview_after: 1h
+  tag_pattern: uffizzi_request_*
+  delete_preview_when_image_tag_is_updated: true
+  deploy_preview_when_image_tag_is_created: true
